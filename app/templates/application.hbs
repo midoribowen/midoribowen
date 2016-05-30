@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -10,9 +10,9 @@
       <a class="navbar-brand" href="#">Midori Bowen</a>
     </div>
     <ul class="nav nav-tabs navbar-left">
-      <li class="active">{{#link-to 'about'}}About{{/link-to}}</li>
-      <li>{{#link-to 'projects'}}Projects{{/link-to}}</li>
-      <li>{{#link-to 'resume'}}Resume{{/link-to}}</li>
+      {{#link-to 'index' tagName="li"}}<a href={{view.href}}>Projects</a> {{/link-to}}
+      {{#link-to 'resume' tagName="li"}}<a href={{view.href}}>Resume</a>{{/link-to}}
+      {{#link-to 'about' tagName="li"}}<a href={{view.href}}>About</a>{{/link-to}}
     </ul>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <div class="nav navbar-nav navbar-right">
@@ -30,7 +30,15 @@
   </div>
 </nav>
 <body>
-  <div class="container">
+  <div class="container header">
+    <h6>Android & Web Developer</h6>
+    <p>
+      I'm currently developing an AngularJS web app for <a href="http://solalla.com/">Solalla Web Services</a>.
+      <br>
+      Check out my personal projects on GitHub.
+    </p>
+  </div>
+  <div class="container main">
     {{outlet}}
   </div>
 </body>
