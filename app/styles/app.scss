@@ -56,10 +56,16 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 
 body {
   background-color: $brand-primary-light;
+  @media (max-width: $screen-tablet) {
+    margin-top: 110px;
+  }
+  @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
+    margin-top: 60px;
+  }
   .container.header {
     position: fixed;
     color: $gray-dark;
-    margin: 110px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     a:link {
       color: $brand-primary;
       text-decoration: underline;
@@ -80,7 +86,7 @@ body {
   .container.main {
     position: fixed;
     background-color: $gray-lighter;
-    margin: 225px auto 30px auto;
+    margin: 115px auto 30px auto;
     padding: 0;
     height: 65%;
     width: 100%;
