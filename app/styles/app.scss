@@ -84,11 +84,17 @@ body {
     }
   }
   .container.main {
+    @media (max-width: $screen-tablet) {
+      margin: 115px auto 30px auto;
+      height: 60%;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
+      margin: 95px auto 30px auto;
+      height: 65%;
+    }
     position: fixed;
     background-color: $gray-lighter;
-    margin: 115px auto 30px auto;
     padding: 0;
-    height: 65%;
     width: 100%;
   }
 }
