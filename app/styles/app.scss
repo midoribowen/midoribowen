@@ -56,19 +56,10 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 
 body {
   background-color: $brand-primary-light;
-  .container.main {
-    position: fixed;
-    background-color: $gray-lighter;
-    margin: 220px 10px 30px 10px;
-    vertical-align: middle;
-    height: 65%;
-    width: 95%;
-  }
   .container.header {
     position: fixed;
     color: $gray-dark;
     margin: 110px 0px 10px 0px;
-    vertical-align: middle;
     a:link {
       color: $brand-primary;
       text-decoration: underline;
@@ -85,6 +76,14 @@ body {
       color: $gray-light;
       font-weight: bolder;
     }
+  }
+  .container.main {
+    position: fixed;
+    background-color: $gray-lighter;
+    margin: 225px auto 30px auto;
+    padding: 0;
+    height: 65%;
+    width: 100%;
   }
 }
 
