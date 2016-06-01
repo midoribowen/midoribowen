@@ -30,15 +30,21 @@
   </div>
 </nav>
 <body>
-  <div class="container header">
-    <h6>Android & Web Developer</h6>
-    <p>
-      I'm currently developing an AngularJS web app for <a href="http://solalla.com/">Solalla Web Services</a>.
-      <br>
-      Check out my personal projects on GitHub.
-    </p>
-  </div>
-  <div class="container main">
-    {{liquid-outlet}}
+  <div class="container">
+    <div class="header">
+      <h6>Android & Web Developer</h6>
+      <p>
+        I'm currently developing an AngularJS web app for <a href="http://solalla.com/">Solalla Web Services</a>.
+        <br>
+        Check out my personal projects on GitHub.
+      </p>
+    </div>
+    <div class="main">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          {{liquid-outlet}}
+        </div>
+      </div>
+    </div>
   </div>
 </body>

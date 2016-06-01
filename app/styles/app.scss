@@ -57,15 +57,13 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 body {
   background-color: $brand-primary-light;
   @media (max-width: $screen-tablet) {
-    margin-top: 110px;
+    margin: 110px auto;
   }
   @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
-    margin-top: 60px;
+    margin: 60px auto;
   }
-  .container.header {
-    position: fixed;
+  .header {
     color: $gray-dark;
-    margin: 0px 0px 10px 0px;
     a:link {
       color: $brand-primary;
       text-decoration: underline;
@@ -83,19 +81,15 @@ body {
       font-weight: bolder;
     }
   }
-  .container.main {
-    @media (max-width: $screen-tablet) {
-      margin: 115px auto 30px auto;
-      height: 60%;
+  .main {
+    .panel {
+      // @media (max-width: $screen-tablet) {
+      //   min-height: 430px;
+      // }
+      // @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
+      //   min-height: 700px;
+      // }
     }
-    @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
-      margin: 95px auto 30px auto;
-      height: 65%;
-    }
-    position: fixed;
-    background-color: $gray-lighter;
-    padding: 0;
-    width: 100%;
   }
 }
 
