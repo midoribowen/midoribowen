@@ -57,40 +57,85 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 body {
   background-color: $brand-primary-light;
   @media (max-width: $screen-tablet) {
-    margin: 110px auto;
+    margin: 110px auto 0px auto;
   }
   @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
   }
-  .header {
-    color: $gray-dark;
-    a:link {
-      color: $brand-primary;
-      text-decoration: underline;
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    .header {
+      order: 0;
+      color: $gray-dark;
+      width: 95%;
+      a:link {
+        color: $brand-primary;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: $brand-primary-dark;
+        font-weight: bold;
+      }
+      a:visited {
+        color: $brand-primary-dark;
+        font-style: italic;
+      }
+      a:active {
+        color: $gray-light;
+        font-weight: bolder;
+      }
     }
-    a:hover {
-      color: $brand-primary-dark;
-      font-weight: bold;
-    }
-    a:visited {
-      color: $brand-primary-dark;
-      font-style: italic;
-    }
-    a:active {
-      color: $gray-light;
-      font-weight: bolder;
+    .main {
+      order: 1;
+      width: 95%;
+      .panel {
+        height: 65vh;
+        .panel-body {
+          padding: 5px;
+        }
+      }
     }
   }
-  .main {
-    .panel {
-      // @media (max-width: $screen-tablet) {
-      //   min-height: 430px;
-      // }
-      // @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
-      //   min-height: 700px;
-      // }
-    }
-  }
+  // @media (max-width: $screen-tablet) {
+  //   margin: 110px auto;
+  // }
+  // @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
+  //   margin: 60px auto;
+  // }
+  // .header {
+  //   color: $gray-dark;
+  //   a:link {
+  //     color: $brand-primary;
+  //     text-decoration: underline;
+  //   }
+  //   a:hover {
+  //     color: $brand-primary-dark;
+  //     font-weight: bold;
+  //   }
+  //   a:visited {
+  //     color: $brand-primary-dark;
+  //     font-style: italic;
+  //   }
+  //   a:active {
+  //     color: $gray-light;
+  //     font-weight: bolder;
+  //   }
+  // }
+  // .main {
+  //   .panel {
+  //     @media (max-width: $screen-tablet) {
+  //       min-height: 430px;
+  //     }
+  //     @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
+  //       min-height: 700px;
+  //     }
+  //   }
+  // }
 }
 
 // Buttons ====================================================================
