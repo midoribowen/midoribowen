@@ -56,10 +56,10 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 
 body {
   background-color: $brand-primary-light;
-  @media (max-width: $screen-tablet) {
+  @media (max-width: $screen-xs-max) {
     margin: 110px auto 0px auto;
   }
-  @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
+  @media (min-width: $screen-tablet) {
     margin: 60px auto 0px auto;
   }
   .flex-container {
@@ -94,48 +94,32 @@ body {
       order: 1;
       width: 95%;
       .panel {
-        height: 65vh;
+        // For small phones 320 - 359
+        @media (min-width: $screen-small-phone)  and (max-width: $screen-xxs-max) {
+          height: 60vh;
+        }
+        // For average phones 360 - 413
+        @media (min-width: $screen-phone) and (max-width: $screen-phone-max) {
+          height: 65vh;
+        }
+        // For large phones 414 - 767
+        @media (min-width: $screen-large-phone) and (max-width: $screen-xs-max) {
+          height: 70vh;
+        }
+        // For tablets 768 - 991
+        @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) {
+          height: 80vh;
+        }
+        // For screens > 992
+        @media (min-width: $screen-desktop) {
+          height: 85vh;
+        }
         .panel-body {
           padding: 5px;
         }
       }
     }
   }
-  // @media (max-width: $screen-tablet) {
-  //   margin: 110px auto;
-  // }
-  // @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
-  //   margin: 60px auto;
-  // }
-  // .header {
-  //   color: $gray-dark;
-  //   a:link {
-  //     color: $brand-primary;
-  //     text-decoration: underline;
-  //   }
-  //   a:hover {
-  //     color: $brand-primary-dark;
-  //     font-weight: bold;
-  //   }
-  //   a:visited {
-  //     color: $brand-primary-dark;
-  //     font-style: italic;
-  //   }
-  //   a:active {
-  //     color: $gray-light;
-  //     font-weight: bolder;
-  //   }
-  // }
-  // .main {
-  //   .panel {
-  //     @media (max-width: $screen-tablet) {
-  //       min-height: 430px;
-  //     }
-  //     @media (min-width: $screen-tablet) and (max-width: $screen-lg-desktop) {
-  //       min-height: 700px;
-  //     }
-  //   }
-  // }
 }
 
 // Buttons ====================================================================
