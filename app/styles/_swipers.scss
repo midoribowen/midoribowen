@@ -42,7 +42,31 @@
     margin: 0px 3px;
   }
 
-  #link-btn {
-    margin: 10px;
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    .google-btn {
+      order: 0;
+      height: 55px;
+      margin-right: 15px;
+    }
+
+    // demo button
+    .btn-success {
+      order: 0;
+      margin-right: 5px;
+      padding: 4px 20px;
+    }
+
+    // source button
+    .btn-info {
+      order: 1;
+      margin-left: 5px;
+      padding: 4px 20px;
+    }
   }
+
 }

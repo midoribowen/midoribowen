@@ -95,9 +95,10 @@ body {
       order: 1;
       width: 95%;
       .panel {
+        padding-bottom: 5px;
         // For small phones 320 - 359
         @media (min-width: $screen-small-phone)  and (max-width: $screen-xxs-max) {
-          height: 60vh;
+          height: 63vh;
         }
         // For average phones 360 - 413
         @media (min-width: $screen-phone) and (max-width: $screen-phone-max) {
