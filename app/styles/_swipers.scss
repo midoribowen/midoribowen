@@ -1,0 +1,32 @@
+#ember471 {
+  height: inherit;
+  // swiper container
+  .swiper-container {
+    margin-top: 2px;
+  }
+
+  // screenshot swiper
+  .screenshot-swiper {
+    height: 60%;
+    padding: 5px 3px 35px 3px;
+    text-align: center;
+  }
+
+  // slide styles
+  .swiper-slide {
+    display: inline-block;
+    height: inherit;
+    width: auto;
+  }
+
+  // mobile screenshots
+  .mobile-img {
+    height: inherit;
+    width: auto;
+    margin: 0px 3px;
+  }
+
+  #source-btn {
+    margin: 10px;
+  }
+}

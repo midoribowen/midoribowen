@@ -3,6 +3,7 @@
 // -----------------------------------------------------
 @import 'variables';
 @import 'bootstrap';
+@import 'swipers';
 
 $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" !default;
 @import url($web-font-path);
@@ -116,6 +117,14 @@ body {
         }
         .panel-body {
           padding: 5px;
+          height: inherit;
+
+          .liquid-container {
+            height: inherit;
+            .liquid-child {
+              height: inherit;
+            }
+          }
         }
       }
     }
