@@ -7,8 +7,12 @@
 
   // screenshot swiper
   .screenshot-swiper {
+    // For small phones to tables 320 - 767
+    @media (min-width: $screen-small-phone)  and (max-width: $screen-xs-max) {
+      height: 50%;
+    }
     height: 60%;
-    padding: 5px 3px 35px 3px;
+    padding: 5px 3px 5px 3px;
     text-align: center;
   }
 
@@ -21,6 +25,11 @@
 
   // mobile screenshots
   .mobile-img {
+    // For small phones to tables 320 - 767
+    @media (min-width: $screen-small-phone)  and (max-width: $screen-xs-max) {
+      height: auto;
+      width: 30%;
+    }
     height: inherit;
     width: auto;
     margin: 0px 3px;

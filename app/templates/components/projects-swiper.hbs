@@ -8,25 +8,31 @@
   class='screenshot-swiper'
 }}
   {{#swiper-slide}}
-  <img src={{slideImage1}} alt={{slideImage1Alt}} class="mobile-img"/>
+  <img src={{slideImage1}} alt={{slideImage1Alt}} class="mobile-img" />
   <img src={{slideImage2}} alt={{slideImage2Alt}} class="mobile-img"/>
   <img src={{slideImage3}} alt={{slideImage3Alt}} class="mobile-img"/>
   {{/swiper-slide}}
-  {{#swiper-slide}}Slide 2{{/swiper-slide}}
-  {{#swiper-slide}}Slide 3{{/swiper-slide}}
-  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
+  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
+  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
+  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
 {{/swiper-container}}
 
 <div class="row">
   <div class="col-xs-12">
     <h5 class="text-center">{{slideTitle}}</h5>
     <div class="col-xs-12 text-left">
-      <p>{{slideDescription}}</p>
+      <small>{{slideDescription}}</small>
     </div>
     <div class="col-xs-12">
-      <a href={{slideLive}}>
-        <img class="pull-right" src="assets/img/google-play-badge.png" alt="Get it on Google Play" width="150"/>
-      </a>
+      {{#if isGoogle}}
+        <a href={{slideLive}}>
+          <img class="pull-right" src="assets/img/google-play-badge.png" alt="Get it on Google Play" width="150"/>
+        </a>
+      {{/if}}
+      {{#if isDemo}}
+        <a href="{{slideLive}}" class="btn btn-success pull-right" id="source-btn">demo</a>
+      {{/if}}
       <a href={{slideSource}} class="btn btn-info pull-right" id="source-btn">source code</a>
     </div>
   </div>
