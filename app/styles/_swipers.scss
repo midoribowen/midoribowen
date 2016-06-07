@@ -7,13 +7,12 @@
 
   // screenshot swiper
   .screenshot-swiper {
-    // For small phones to tables 320 - 767
-    @media (min-width: $screen-small-phone)  and (max-width: $screen-xs-max) {
-      height: 50%;
-    }
-    height: 60%;
     padding: 5px 3px 5px 3px;
     text-align: center;
+    // For screens > 992
+    @media (min-width: $screen-desktop) {
+      height: 60%
+    }
   }
 
   // slide styles
@@ -25,17 +24,25 @@
 
   // mobile screenshots
   .mobile-img {
-    // For small phones to tables 320 - 767
-    @media (min-width: $screen-small-phone)  and (max-width: $screen-xs-max) {
+    // For small phones 320 - 767
+    @media (min-width: $screen-small-phone) and (max-width: $screen-xs-max) {
       height: auto;
       width: 30%;
     }
-    height: inherit;
-    width: auto;
+    // For tablets 768 - 991
+    @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) {
+      height: auto;
+      width: 32%;
+    }
+    // For screens > 992
+    @media (min-width: $screen-desktop) {
+      height: inherit;
+      width: auto;
+    }
     margin: 0px 3px;
   }
 
-  #source-btn {
+  #link-btn {
     margin: 10px;
   }
 }
