@@ -57,7 +57,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 
 body {
   background-color: $brand-primary-light;
-  @media (max-width: $screen-xs-max) {
+  @media (min-width: $screen-small-phone) and (max-width: $screen-xs-max) {
     margin: 110px auto 0px auto;
   }
   @media (min-width: $screen-tablet) {

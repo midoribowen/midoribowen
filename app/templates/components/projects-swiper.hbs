@@ -1,27 +1,40 @@
 {{#swiper-container
+  grabCursor=true
   pagination=true
   loop=true
   centered=true
   slidesPerView=1
-  grabCursor=true
   onChange='swipeContent'
-  class='screenshot-swiper'
-}}
+  class='screenshot-swiper'}}
+
   {{#swiper-slide}}
-  <img src={{slideImage1}} alt={{slideImage1Alt}} class="mobile-img" />
-  <img src={{slideImage2}} alt={{slideImage2Alt}} class="mobile-img"/>
-  <img src={{slideImage3}} alt={{slideImage3Alt}} class="mobile-img"/>
+    <img src="assets/img/SIU-1.png" alt="Image of Shake It Up Android App" class="mobile-img" />
+    <img src="assets/img/SIU-2.png" alt="Image of Shake It Up Android App" class="mobile-img"/>
+    <img src="assets/img/SIU-3.png" alt="Image of Shake It Up Android App" class="mobile-img"/>
   {{/swiper-slide}}
-  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
-  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
-  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
-  {{#swiper-slide}}{{slideTitle}}{{/swiper-slide}}
+
+  {{#swiper-slide}}
+    <img src="assets/img/MovieLookup-1.png" alt="Image of Movie Lookup Android App" class="mobile-img" />
+    <img src="assets/img/MovieLookup-2.png" alt="Image of Movie Lookup Android App" class="mobile-img"/>
+    <img src="assets/img/MovieLookup-3.png" alt="Image of Movie Lookup Android App" class="mobile-img"/>
+  {{/swiper-slide}}
+
+  {{#swiper-slide}}
+    <img src="assets/img/Drink-1.png" alt="Image of Movie Lookup Android App" class="mobile-img" />
+    <img src="assets/img/Drink-2.png" alt="Image of Movie Lookup Android App" class="mobile-img"/>
+    <img src="assets/img/Drink-3.png" alt="Image of Movie Lookup Android App" class="mobile-img"/>
+  {{/swiper-slide}}
+
+  {{#swiper-slide}}
+    <img src="assets/img/YesChef-3.png" alt="Image of YesChef Java web app" class="web-img" />
+  {{/swiper-slide}}
+  {{#swiper-slide}}<img src="assets/img/MSPC.png" alt="Image of YesChef Java web app" class="web-img" />{{/swiper-slide}}
 {{/swiper-container}}
 
 <div class="row">
   <div class="col-xs-12">
-    <h6 class="text-center">{{slideTitle}}</h6>
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left">
+    <h5 class="text-center">{{slideTitle}}</h5>
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left description">
       <small>{{slideDescription}}</small>
     </div>
   </div>
