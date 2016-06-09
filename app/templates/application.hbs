@@ -11,7 +11,6 @@
     </div>
     <ul class="nav nav-tabs navbar-left">
       {{#link-to 'index' tagName="li"}}<a href={{view.href}}>Projects</a> {{/link-to}}
-      {{#link-to 'resume' tagName="li"}}<a href={{view.href}}>Resume</a>{{/link-to}}
       {{#link-to 'about' tagName="li"}}<a href={{view.href}}>About</a>{{/link-to}}
     </ul>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -38,9 +37,7 @@
   </div>
   <div class="main">
     <div class="panel panel-default">
-      <div class="panel-body">
-        {{liquid-outlet}}
-      </div>
+      {{liquid-outlet}}
     </div>
   </div>
 </div>

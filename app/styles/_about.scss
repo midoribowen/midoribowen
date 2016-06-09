@@ -1,0 +1,28 @@
+.panel-body {
+  padding: 5px;
+  height: inherit;
+
+  .about {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    .about-img {
+      order: 0;
+      height: 100px;
+      width: 100px;
+      border: 3px solid $brand-warning;
+      border-radius: 50px;
+    }
+
+    .about-text {
+      order: 0;
+      padding-top: 5px;
+    }
+
+  }
+}

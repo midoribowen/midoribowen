@@ -4,6 +4,7 @@
 @import 'variables';
 @import 'bootstrap';
 @import 'swipers';
+@import 'about';
 
 $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" !default;
 @import url($web-font-path);
@@ -116,16 +117,13 @@ body {
         @media (min-width: $screen-desktop) {
           height: 85vh;
         }
-        .panel-body {
-          padding: 5px;
-          height: inherit;
 
-          .liquid-container {
+        .liquid-container {
+          height: inherit;
+          .liquid-child {
             height: inherit;
-            .liquid-child {
-              height: inherit;
-            }
           }
+
         }
       }
     }
