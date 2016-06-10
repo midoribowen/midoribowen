@@ -101,11 +101,11 @@ body {
         @media (min-width: $screen-small-phone)  and (max-width: $screen-xxs-max) {
           height: 63vh;
         }
-        // For average phones 360 - 413
+        // For average phones 360 - 410
         @media (min-width: $screen-phone) and (max-width: $screen-phone-max) {
           height: 65vh;
         }
-        // For large phones 414 - 767
+        // For large phones 411 - 767
         @media (min-width: $screen-large-phone) and (max-width: $screen-xs-max) {
           height: 70vh;
         }

@@ -5,26 +5,11 @@
   .projects {
     height: inherit;
     // swiper container
-    .swiper-container {
-      margin-top: 2px;
-    }
-
-    // screenshot swiper
     .screenshot-swiper {
       padding: 5px 3px 5px 3px;
       text-align: center;
       // For screens 320 - 359
-      @media (min-width: $screen-small-phone) and (max-width: $screen-xxs-max) {
-        height: 50%;
-        width: auto;
-      }
-      // For screens 360 - 434
-      @media (min-width: $screen-phone) and (max-width: $screen-phone-max) {
-        height: 50%;
-        width: auto;
-      }
-      // For screens 435 - 767
-      @media (min-width: $screen-large-phone) and (max-width: $screen-sm-max) {
+      @media (min-width: $screen-small-phone) and (max-width: $screen-sm-max) {
         height: 50%;
         width: auto;
       }
@@ -38,81 +23,92 @@
         height: 60%;
         width: auto;
       }
-    }
+      .swiper-wrapper {
+        // slide styles
+        .swiper-slide {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          // mobile screenshots
+          .mobile-img {
+            order: 1;
+            margin: 0px 3px;
+            // For small/average phones 320 - 410
+            @media (min-width: $screen-small-phone) and (max-width: $screen-phone-max) {
+              width: 30%;
+              height: auto;
+            }
+            // For large phones 411 - 767
+            @media (min-width: $screen-large-phone) and (max-width: $screen-xs-max) {
+              width: 31%;
+              height: auto;
+            }
+            // For tablets 768 - 991
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+              width: 32%;
+              height: auto;
+            }
+            // For screens > 992
+            @media (min-width: $screen-desktop) {
+              height: inherit;
+              width: auto;
+            }
+          }
 
-    // slide styles
-    .swiper-slide {
-      display: inline-block;
-      height: inherit;
-      width: auto;
-    }
+          // web screenshots
+          .web-img {
+            margin: 0px 0px;
+            height: inherit;
+            width: auto;
+          }
 
-    // mobile screenshots
-    .mobile-img {
-      margin: 0px 3px;
-      width: 30%;
-      // For small/average/large phones 320 - 767
-      @media (min-width: $screen-small-phone) and (max-width: $screen-xs-max) {
-        width: 30%;
-        height: auto;
-      }
-      // For tablets 768 - 991
-      @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) {
-        width: 32%;
-        height: auto;
-      }
-      // For screens > 992
-      @media (min-width: $screen-desktop) {
-        height: inherit;
-        width: auto;
-      }
-    }
-
-    // web screenshots
-    .web-img {
-      margin: 0px 0px;
-      height: inherit;
-      width: auto;
-    }
-
-    @media (max-width: $screen-xxs-max) {
-      h5, .description {
-        margin-top: 0px;
-        margin-bottom: 2px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-      }
-      .description {
-        line-height: 1.5em;
+        }
       }
     }
 
-    .btn-container {
-      margin-top: 3px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      .google-btn {
-        margin-top: 0px;
-        order: 0;
-        height: 55px;
-        margin-right: 15px;
+    .slider-content {
+      max-height: 30vh;
+      overflow-y: auto;
+      @media (max-width: $screen-xxs-max) {
+        h5, .description {
+          margin-top: 0px;
+          margin-bottom: 2px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+        .description {
+          line-height: 1.5em;
+        }
       }
 
-      // demo button
-      .btn-success {
-        order: 0;
-        margin-right: 5px;
-        padding: 4px 20px;
-      }
+      .btn-container {
+        margin-top: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .google-btn {
+          margin-top: 0px;
+          order: 0;
+          height: 55px;
+          margin-right: 15px;
+        }
 
-      // source button
-      .btn-info {
-        order: 1;
-        margin-left: 5px;
-        padding: 4px 20px;
+        // demo button
+        .btn-success {
+          order: 0;
+          margin-right: 5px;
+          padding: 4px 20px;
+        }
+
+        // source button
+        .btn-info {
+          order: 1;
+          margin-left: 5px;
+          padding: 4px 20px;
+        }
       }
     }
 

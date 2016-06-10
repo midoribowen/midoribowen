@@ -31,22 +31,24 @@
   {{#swiper-slide}}<img src="assets/img/MSPC.png" alt="Image of YesChef Java web app" class="web-img" />{{/swiper-slide}}
 {{/swiper-container}}
 
-<div class="row">
-  <div class="col-xs-12">
-    <h5 class="text-center">{{slideTitle}}</h5>
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left description">
-      <small>{{slideDescription}}</small>
+<div class="slider-content">
+  <div class="row">
+    <div class="col-xs-12">
+      <h5 class="text-center">{{slideTitle}}</h5>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left description">
+        <small>{{slideDescription}}</small>
+      </div>
     </div>
   </div>
-</div>
-<div class="btn-container">
-  {{#if isGoogle}}
-  <a href={{slideLive}}>
-    <img src="assets/img/google-play-badge.png" alt="Get it on Google Play" class="google-btn" />
-  </a>
-  {{/if}}
-  {{#if isDemo}}
-  <a href="{{slideLive}}" class="btn btn-success">demo</a>
-  {{/if}}
-  <a href={{slideSource}} class="btn btn-info">source</a>
+  <div class="btn-container">
+    {{#if isGoogle}}
+    <a href={{slideLive}}>
+      <img src="assets/img/google-play-badge.png" alt="Get it on Google Play" class="google-btn" />
+    </a>
+    {{/if}}
+    {{#if isDemo}}
+    <a href="{{slideLive}}" class="btn btn-success">demo</a>
+    {{/if}}
+    <a href={{slideSource}} class="btn btn-info">source</a>
+  </div>
 </div>
