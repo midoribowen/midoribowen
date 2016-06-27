@@ -7,7 +7,8 @@
     padding: $panel-body-padding;
     height: inherit;
     max-height: 62vh;
-    overflow-y: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     .about-img {
       order: 0;
       margin-bottom: 15px;
