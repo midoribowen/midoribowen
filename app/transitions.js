@@ -8,12 +8,6 @@ export default function() {
     this.reverse('toRight')
   );
   this.transition(
-    this.fromRoute('resume'),
-    this.toRoute('about'),
-    this.use('toLeft'),
-    this.reverse('toRight')
-  );
-  this.transition(
     this.fromRoute('about'),
     this.toRoute('index'),
     this.use('toRight'),
