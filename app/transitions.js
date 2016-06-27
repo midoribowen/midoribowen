@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default function() {
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('resume'),
+    this.toRoute('about'),
     this.use('toLeft'),
     this.reverse('toRight')
   );
