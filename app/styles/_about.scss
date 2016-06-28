@@ -1,30 +1,28 @@
 .panel-body {
   .about {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
     padding: $panel-body-padding;
     height: inherit;
-    max-height: 62vh;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    .about-img {
-      order: 0;
+  }
+  .about-img {
+    flex: 0 0 auto;
+    .headshot {
+      height: 100px;
+      width: 100px;
+      border: 3px solid $brand-warning;
+      border-radius: 50px;
       margin-bottom: 15px;
-      .headshot {
-        height: 100px;
-        width: 100px;
-        border: 3px solid $brand-warning;
-        border-radius: 50px;
-      }
     }
-    .about-text {
-      order: 1;
-    }
-    .about-resume {
-      order:1;
-    }
-
+  }
+  .about-text {
+    flex: 1 0 auto;
+  }
+  .about-resume {
+    flex: 1 0 auto;
+    margin-bottom: 10px;
   }
 }
